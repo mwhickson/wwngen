@@ -8,7 +8,7 @@
         />
         <meta
             name="description"
-            content="A first-level, character generator for the free edition of the fantasy tabletop roleplaying game Worlds Without Number by Sine Nomine Publishing (Kevin Crawford)."
+            content="A first-level character generator for the free edition of the fantasy tabletop roleplaying game Worlds Without Number by Sine Nomine Publishing (Kevin Crawford)."
         />
 
         <title>WWN Character Generator</title>
@@ -29,7 +29,7 @@
             </h1>
 
             <p class="ui segment">
-                A first-level, character generator for the
+                A first-level character generator for the
                 <a
                     href="https://www.drivethrurpg.com/en/product/348809/worlds-without-number-free-edition"
                     target="_blank"
@@ -106,42 +106,6 @@
                                 <input name="Player" id="Player" type="text" />
                             </td>
                         </tr>
-                        <tr>
-                            <table class="ui basic compact table form">
-                                <tr>
-                                    <td>
-                                        <label for="Class">Class</label>
-                                    </td>
-                                    <td>
-                                        <select name="Class" id="Class">
-                                            <option></option>
-                                            <option>Expert</option>
-                                            <option>Mage</option>
-                                            <option>Warrior</option>
-                                            <option>Adventurer</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><label for="Level">Level</label></td>
-                                    <td>
-                                        1
-                                        <!-- <input name="Level" id="Level" type="text" /> -->
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label for="Benefits">Benefits</label>
-                                    </td>
-                                    <td>
-                                        <textarea
-                                            name="Benefits"
-                                            id="Benefits"
-                                        ></textarea>
-                                    </td>
-                                </tr>
-                            </table>
-                        </tr>
                     </table>
                 </div>
 
@@ -205,6 +169,68 @@
                         <tr>
                             <table class="ui basic compact table form">
                                 <tr>
+                                    <td><label for="Class">Class</label></td>
+                                    <td>
+                                        <table class="ui very basic table form">
+                                            <tr>
+                                                <td>
+                                                    <select
+                                                        name="Class"
+                                                        id="Class"
+                                                    >
+                                                        <option></option>
+                                                        <option>Expert</option>
+                                                        <option>Mage</option>
+                                                        <option>Warrior</option>
+                                                        <option>
+                                                            Adventurer
+                                                        </option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <label for="Level"
+                                                        >Level</label
+                                                    >
+                                                </td>
+                                                <td>
+                                                    1
+                                                    <!-- <input name="Level" id="Level" type="text" /> -->
+                                                </td>
+                                                <td>
+                                                    <label for="XP"
+                                                        ><abbr
+                                                            title="Experience"
+                                                            >XP</abbr
+                                                        ></label
+                                                    >
+                                                </td>
+                                                <td>
+                                                    <input
+                                                        name="XP"
+                                                        id="XP"
+                                                        type="text"
+                                                    />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="Benefits">Benefits</label>
+                                    </td>
+                                    <td>
+                                        <textarea
+                                            name="Benefits"
+                                            id="Benefits"
+                                        ></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                        </tr>
+                        <tr>
+                            <table class="ui basic compact table form">
+                                <tr>
                                     <td>
                                         <label for="Background"
                                             >Background</label
@@ -259,287 +285,490 @@
                     class="ui bottom attached tab segment"
                     data-tab="Attributes"
                 >
-                    <table class="ui basic compact table form">
-                        <tr>
-                            <td>
-                                <label for="STR"
-                                    ><abbr title="Strength">STR</abbr></label
-                                >
-                            </td>
-                            <td><input name="STR" id="STR" type="text" /></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="DEX"
-                                    ><abbr title="Dexterity">DEX</abbr></label
-                                >
-                            </td>
-                            <td><input name="DEX" id="DEX" type="text" /></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="CON"
-                                    ><abbr title="Constitution"
-                                        >CON</abbr
-                                    ></label
-                                >
-                            </td>
-                            <td><input name="CON" id="CON" type="text" /></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="INT"
-                                    ><abbr title="Intelligence"
-                                        >INT</abbr
-                                    ></label
-                                >
-                            </td>
-                            <td><input name="INT" id="INT" type="text" /></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="WIS"
-                                    ><abbr title="Wisdom">WIS</abbr></label
-                                >
-                            </td>
-                            <td><input name="WIS" id="WIS" type="text" /></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="CHA"
-                                    ><abbr title="Charisma">CHA</abbr></label
-                                >
-                            </td>
-                            <td><input name="CHA" id="CHA" type="text" /></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="XP"
-                                    ><abbr title="Experience">XP</abbr></label
-                                >
-                            </td>
-                            <td><input name="XP" id="XP" type="text" /></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="BaseAttackBonus"
-                                    >Base Attack Bonus</label
-                                >
-                            </td>
-                            <td>
-                                <input
-                                    name="BaseAttackBonus"
-                                    id="BaseAttackBonus"
-                                    type="text"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="MeleeAttackBonus"
-                                    >Melee Attack Bonus</label
-                                >
-                                (= +<abbr title="Strength">STR</abbr> modifier)
-                            </td>
-                            <td>
-                                <input
-                                    name="MeleeAttackBonus"
-                                    id="MeleeAttackBonus"
-                                    type="text"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="RangedAttackBonus"
-                                    >Ranged Attack Bonus</label
-                                >
-                                (= +<abbr title="Dexterity">DEX</abbr> modifier)
-                            </td>
-                            <td>
-                                <input
-                                    name="RangedAttackBonus"
-                                    id="RangedAttackBonus"
-                                    type="text"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="InitiativeBonus"
-                                    >Initiative Bonus</label
-                                >
-                                (= <abbr title="Dexterity">DEX</abbr> modifier)
-                            </td>
-                            <td>
-                                <input
-                                    name="InitiativeBonus"
-                                    id="InitiativeBonus"
-                                    type="text"
-                                />
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="ui three column grid">
+                        <div class="column">
+                            <table class="ui basic compact table form">
+                                <tr>
+                                    <td>
+                                        <label for="STR"
+                                            ><abbr title="Strength"
+                                                >STR</abbr
+                                            ></label
+                                        >
+                                    </td>
+                                    <td>
+                                        <input
+                                            name="STR"
+                                            id="STR"
+                                            type="text"
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="DEX"
+                                            ><abbr title="Dexterity"
+                                                >DEX</abbr
+                                            ></label
+                                        >
+                                    </td>
+                                    <td>
+                                        <input
+                                            name="DEX"
+                                            id="DEX"
+                                            type="text"
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="CON"
+                                            ><abbr title="Constitution"
+                                                >CON</abbr
+                                            ></label
+                                        >
+                                    </td>
+                                    <td>
+                                        <input
+                                            name="CON"
+                                            id="CON"
+                                            type="text"
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="INT"
+                                            ><abbr title="Intelligence"
+                                                >INT</abbr
+                                            ></label
+                                        >
+                                    </td>
+                                    <td>
+                                        <input
+                                            name="INT"
+                                            id="INT"
+                                            type="text"
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="WIS"
+                                            ><abbr title="Wisdom"
+                                                >WIS</abbr
+                                            ></label
+                                        >
+                                    </td>
+                                    <td>
+                                        <input
+                                            name="WIS"
+                                            id="WIS"
+                                            type="text"
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="CHA"
+                                            ><abbr title="Charisma"
+                                                >CHA</abbr
+                                            ></label
+                                        >
+                                    </td>
+                                    <td>
+                                        <input
+                                            name="CHA"
+                                            id="CHA"
+                                            type="text"
+                                        />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="column">
+                            <table class="ui basic compact table form">
+                                <tr>
+                                    <td>
+                                        <label for="HitPoints"
+                                            >Hit Points</label
+                                        >
+                                    </td>
+                                    <td>
+                                        <input
+                                            name="HitPoints"
+                                            id="HitPoints"
+                                            type="text"
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="SystemStrain"
+                                            >System Strain</label
+                                        >
+                                    </td>
+                                    <td>
+                                        <input
+                                            name="SystemStrain"
+                                            id="SystemStrain"
+                                            type="text"
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="BaseAttackBonus"
+                                            >Base Attack Bonus</label
+                                        >
+                                    </td>
+                                    <td>
+                                        <input
+                                            name="BaseAttackBonus"
+                                            id="BaseAttackBonus"
+                                            type="text"
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="MeleeAttackBonus"
+                                            >Melee Attack Bonus</label
+                                        >
+                                        (= +<abbr title="Strength">STR</abbr>
+                                        modifier)
+                                    </td>
+                                    <td>
+                                        <input
+                                            name="MeleeAttackBonus"
+                                            id="MeleeAttackBonus"
+                                            type="text"
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="RangedAttackBonus"
+                                            >Ranged Attack Bonus</label
+                                        >
+                                        (= +<abbr title="Dexterity">DEX</abbr>
+                                        modifier)
+                                    </td>
+                                    <td>
+                                        <input
+                                            name="RangedAttackBonus"
+                                            id="RangedAttackBonus"
+                                            type="text"
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="InitiativeBonus"
+                                            >Initiative Bonus</label
+                                        >
+                                        (=
+                                        <abbr title="Dexterity">DEX</abbr>
+                                        modifier)
+                                    </td>
+                                    <td>
+                                        <input
+                                            name="InitiativeBonus"
+                                            id="InitiativeBonus"
+                                            type="text"
+                                        />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="column">
+                            <table class="ui basic compact table form">
+                                <tr>
+                                    <td>
+                                        <label for="PhysicalSave"
+                                            >Physical Save</label
+                                        >
+                                        (16 - level -
+                                        <abbr title="Strength">STR</abbr>/<abbr
+                                            title="Constitution"
+                                            >CON</abbr
+                                        >
+                                        modifier)
+                                    </td>
+                                    <td>
+                                        <input
+                                            name="PhysicalSave"
+                                            id="PhysicalSave"
+                                            type="text"
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="EvasionSave"
+                                            >Evasion Save</label
+                                        >
+                                        (16 - level -
+                                        <abbr title="Dexterity">DEX</abbr>/<abbr
+                                            title="Intelligence"
+                                            >INT</abbr
+                                        >
+                                        modifier)
+                                    </td>
+                                    <td>
+                                        <input
+                                            name="EvasionSave"
+                                            id="EvasionSave"
+                                            type="text"
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="MentalSave"
+                                            >Mental Save</label
+                                        >
+                                        (16 - level -
+                                        <abbr title="Wisdom">WIS</abbr>/<abbr
+                                            title="Charisma"
+                                            >CHA</abbr
+                                        >
+                                        modifier)
+                                    </td>
+                                    <td>
+                                        <input
+                                            name="MentalSave"
+                                            id="MentalSave"
+                                            type="text"
+                                        />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="LuckSave"
+                                            >Mental Save</label
+                                        >
+                                        (16 - level)
+                                    </td>
+                                    <td>
+                                        <input
+                                            name="LuckSave"
+                                            id="LuckSave"
+                                            type="text"
+                                        />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="ui bottom attached tab segment" data-tab="Foci">
                     <table class="ui basic compact table form">
                         <tr>
-                            <th>Foci</th>
-                        </tr>
-                        <tr>
                             <td>
-                                <input name="Foci" id="Foci1" type="text" />
+                                <select name="Foci" id="Foci1">
+                                    <option></option>
+                                    <option>Alert</option>
+                                    <option>Armored Magic</option>
+                                    <option>Armsmaster</option>
+                                    <option>Artisan</option>
+                                    <option>Assassin</option>
+                                    <option>Authority</option>
+                                    <option>Close Combatant</option>
+                                    <option>Connected</option>
+                                    <option>Cultured</option>
+                                    <option>Die Hard</option>
+                                    <option>Deadeye</option>
+                                    <option>Dealmaker</option>
+                                    <option>Developed Attribute</option>
+                                    <option>Diplomatic Grace</option>
+                                    <option>Gifted Chirurgeon</option>
+                                    <option>Henchkeeper</option>
+                                    <option>Impervious Defense</option>
+                                    <option>Impostor</option>
+                                    <option>Lucky</option>
+                                    <option>Nullifier</option>
+                                    <option>Poisoner</option>
+                                    <option>Polymath</option>
+                                    <option>Rider</option>
+                                    <option>Shocking Assault</option>
+                                    <option>Sniper's Eye</option>
+                                    <option>Special Origin</option>
+                                    <option>Specialist</option>
+                                    <option>Spirit Familliar</option>
+                                    <option>Trapmaster</option>
+                                    <option>Unarmed Combatant</option>
+                                    <option>Unique Gift</option>
+                                    <option>Valiant Defender</option>
+                                    <option>Well Met</option>
+                                    <option>Whirlwind Assault</option>
+                                    <option>Xenoblooded</option>
+                                </select>
                             </td>
-                        </tr>
-                        <tr>
                             <td>
-                                <input name="Foci" id="Foci2" type="text" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input name="Foci" id="Foci3" type="text" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input name="Foci" id="Foci4" type="text" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input name="Foci" id="Foci5" type="text" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input name="Foci" id="Foci6" type="text" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input name="Foci" id="Foci7" type="text" />
+                                <input
+                                    name="FociLevel"
+                                    id="FociLevel1"
+                                    type="text"
+                                />
                             </td>
                         </tr>
                     </table>
                 </div>
 
-                <div
-                    class="ui bottom attached tab segment"
-                    data-tab="Skills"
-                ></div>
+                <div class="ui bottom attached tab segment" data-tab="Skills">
+                    <table class="ui basic compact table form">
+                        <tr>
+                            <td>
+                                <select name="Skill" id="Skill">
+                                    <option></option>
+                                    <option>Administer</option>
+                                    <option>Connect</option>
+                                    <option>Convince</option>
+                                    <option>Craft</option>
+                                    <option>Exert</option>
+                                    <option>Heal</option>
+                                    <option>Know</option>
+                                    <option>Lead</option>
+                                    <option>Magic</option>
+                                    <option>Notice</option>
+                                    <option>Perform</option>
+                                    <option>Pray</option>
+                                    <option>Punch</option>
+                                    <option>Ride</option>
+                                    <option>Sail</option>
+                                    <option>Shoot</option>
+                                    <option>Sneak</option>
+                                    <option>Stab</option>
+                                    <option>Survive</option>
+                                    <option>Trade</option>
+                                    <option>Work</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input
+                                    name="SkillLevel"
+                                    id="SkillLevel1"
+                                    type="text"
+                                />
+                            </td>
+                        </tr>
+                    </table>
 
-                <div
-                    class="ui bottom attached tab segment"
-                    data-tab="Magic"
-                ></div>
+                    <div class="ui container">
+                        <label>Languages</label>
+                    </div>
+                </div>
+
+                <div class="ui bottom attached tab segment" data-tab="Magic">
+                    <div class="ui container">
+                        <label>Magical Arts</label>
+                        <table class="ui basic compact table form">
+                            <tr>
+                                <td>
+                                    <input
+                                        name="MagicalArt"
+                                        id="MagicalArt1"
+                                        type="text"
+                                    />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="ui container">
+                        <label>High Magic</label>
+                        <table class="ui basic compact table form">
+                            <tr>
+                                <td>
+                                    <input
+                                        name="HighMagic"
+                                        id="HighMagic1"
+                                        type="text"
+                                    />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
 
                 <div
                     class="ui bottom attached tab segment"
                     data-tab="Equipment"
                 >
-                    <!-- <table class="ui basic compact table form">
-                        <tr>
-                            <th>Readied Items</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input
-                                    name="ReadiedItem"
-                                    id="ReadiedItem1"
-                                    type="text"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input
-                                    name="ReadiedItem"
-                                    id="ReadiedItem2"
-                                    type="text"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input
-                                    name="ReadiedItem"
-                                    id="ReadiedItem3"
-                                    type="text"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input
-                                    name="ReadiedItem"
-                                    id="ReadiedItem4"
-                                    type="text"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input
-                                    name="ReadiedItem"
-                                    id="ReadiedItem5"
-                                    type="text"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input
-                                    name="ReadiedItem"
-                                    id="ReadiedItem6"
-                                    type="text"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input
-                                    name="ReadiedItem"
-                                    id="ReadiedItem7"
-                                    type="text"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input
-                                    name="ReadiedItem"
-                                    id="ReadiedItem8"
-                                    type="text"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input
-                                    name="ReadiedItem"
-                                    id="ReadiedItem9"
-                                    type="text"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input
-                                    name="ReadiedItem"
-                                    id="ReadiedItem10"
-                                    type="text"
-                                />
-                            </td>
-                        </tr>
-                    </table> -->
+                    <div class="ui two column grid">
+                        <div class="column">
+                            <div class="ui container">
+                                <label>Armor</label>
+                            </div>
+                            <div class="ui container">
+                                <label>Weapons</label>
+                            </div>
+                            <div class="ui container">
+                                <label>Wealth</label>
+                            </div>
+                            <div class="ui container">
+                                <label>Readied Items</label>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="ui container">
+                                <label>Mount</label>
+                            </div>
+                            <div class="ui container">
+                                <label>Stowed Items</label>
+                            </div>
+                            <div class="ui container">
+                                <label>Stored Items</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div
-                    class="ui bottom attached tab segment"
+                    class="ui bottom attached tab segment form"
                     data-tab="Notes"
-                ></div>
+                >
+                    <div class="ui three column grid">
+                        <div class="column">
+                            <div class="ui container">
+                                <label for="Goals">Goals</label>
+                                <textarea name="Goals" id="Goals"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="ui container">
+                                <label for="Projects">Projects</label>
+                                <textarea
+                                    name="Projects"
+                                    id="Projects"
+                                ></textarea>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="ui container">
+                                <label for="AlliesEnemies"
+                                    >Allies & Enemies</label
+                                >
+                                <textarea
+                                    name="AlliesEnemies"
+                                    id="AlliesEnemies"
+                                ></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui container">
+                        <label for="Notes">Notes</label>
+                        <textarea name="Notes" id="Notes"></textarea>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
