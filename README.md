@@ -4,6 +4,8 @@
 
 This tool strives to provide a comprehensive and robust first-level character generator for the free edition of the tabletop fantasy roleplaying game Worlds Without Number.
 
+![WWN Character Generator (Work in Progress)](wwngen.png)
+
 ## Links
 
 - [Sine Nomine Publishing](https://sine-nomine-publishing.myshopify.com/)

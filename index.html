@@ -45,6 +45,18 @@
                 (Kevin Crawford).
             </p>
 
+            <div class="ui labeled borderless icon menu">
+                <a class="item">
+                    <i class="certificate icon"></i>
+                    New Character
+                </a>
+
+                <a class="item">
+                    <i class="download icon"></i>
+                    Export Character
+                </a>
+            </div>
+
             <div class="character-sheet ui container">
                 <div class="ui top attached tabular menu">
                     <a class="active item" data-tab="Overview">
@@ -53,11 +65,17 @@
                     >
                     <a class="item" data-tab="BasicInformation">
                         <i class="address card outline icon"></i>
-                        Basic Information</a
+                        Basic Information
+                        <!--&nbsp;
+                        <i class="red exclamation triangle icon"></i
+                    >--></a
                     >
                     <a class="item" data-tab="Attributes">
                         <i class="chart bar outline icon"></i>
-                        Attributes</a
+                        Attributes
+                        <!--&nbsp;
+                        <i class="green check circle icon"></i
+                    >--></a
                     >
                     <a class="item" data-tab="Foci">
                         <i class="bullseye icon"></i>
@@ -78,6 +96,10 @@
                     <a class="item" data-tab="Notes">
                         <i class="edit outline icon"></i>
                         Notes</a
+                    >
+                    <a class="item" data-tab="SketchSigil">
+                        <i class="camera icon"></i>
+                        Sketch/Sigil</a
                     >
                 </div>
 
@@ -769,6 +791,11 @@
                         <textarea name="Notes" id="Notes"></textarea>
                     </div>
                 </div>
+
+                <div
+                    class="ui bottom attached tab segment form"
+                    data-tab="SketchSigil"
+                ></div>
             </div>
         </div>
     </body>
