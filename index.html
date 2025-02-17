@@ -139,11 +139,23 @@
                         <tr>
                             <td><label for="Homeland">Homeland</label></td>
                             <td>
-                                <input
-                                    name="Homeland"
-                                    id="Homeland"
-                                    type="text"
-                                />
+                                <select name="Homeland" id="Homeland">
+                                    <option></option>
+                                    <option>The Ashblight</option>
+                                    <option>The Black Spine</option>
+                                    <option>The Blind Marsh</option>
+                                    <option>Emed-Dar</option>
+                                    <option>Emed-Kist</option>
+                                    <option>Ka-Adun</option>
+                                    <option>Llaigis</option>
+                                    <option>Lost Emed</option>
+                                    <option>New Voth</option>
+                                    <option>Sarul</option>
+                                    <option>The Mirewash</option>
+                                    <option>The Rebel Coast</option>
+                                    <option>The Sisters</option>
+                                    <option>Thur</option>
+                                </select>
                             </td>
                         </tr>
                         <tr>
@@ -163,11 +175,30 @@
                                 <label for="RaceSpecies">Race/Species</label>
                             </td>
                             <td>
-                                <input
-                                    name="RaceSpecies"
-                                    id="RaceSpecies"
-                                    type="text"
-                                />
+                                <select name="RaceSpecies" id="RaceSpecies">
+                                    <option></option>
+                                    <option>Vothian</option>
+                                    <option>Khalan</option>
+                                    <option>Lin</option>
+                                    <option>Olok</option>
+                                    <option>Osrin</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Faith">Faith</label>
+                            </td>
+                            <td>
+                                <select name="Faith" id="Faith">
+                                    <option></option>
+                                    <option>The Brass Cult</option>
+                                    <option>The Servants of Shun</option>
+                                    <option>The Old Lords</option>
+                                    <option>The Golden Path</option>
+                                    <option>The Bleeding God</option>
+                                    <option>The Seers of Voth</option>
+                                </select>
                             </td>
                         </tr>
                         <tr>
@@ -682,6 +713,22 @@
 
                     <div class="ui container">
                         <label>Languages</label>
+                        <select>
+                            <option></option>
+                            <option>Trade Cant</option>
+                            <option>Old Vothian</option>
+                            <option>Modern Vothian</option>
+                            <option>Brass Speech</option>
+                            <option>Emedian</option>
+                            <option>Thurian</option>
+                            <option>Llaigisan</option>
+                            <option>Anak Speech</option>
+                            <option>Predecessant</option>
+                            <option>Preterite</option>
+                            <option>Abased</option>
+                            <option>Recurrent</option>
+                            <option>Deep Speech</option>
+                        </select>
                     </div>
                 </div>
 
@@ -691,11 +738,110 @@
                         <table class="ui basic compact table form">
                             <tr>
                                 <td>
-                                    <input
-                                        name="MagicalArt"
-                                        id="MagicalArt1"
-                                        type="text"
-                                    />
+                                    <select name="MagicalArt" id="MagicalArt1">
+                                        <option></option>
+                                        <optgroup
+                                            label="Arts of the High Mages"
+                                        >
+                                            <option>Arcane Lexicon</option>
+                                            <option>Counter Magic</option>
+                                            <option>Empowered Sorcery</option>
+                                            <option>Hang Sorcery</option>
+                                            <option>Inexorable Effect</option>
+                                            <option>Iron Resolution</option>
+                                            <option>
+                                                Preparatory Countermagic
+                                            </option>
+                                            <option>Psychic Conversion</option>
+                                            <option>Restrained Casting</option>
+                                            <option>Retain Sorcery</option>
+                                            <option>Sense Magic</option>
+                                            <option>Suppress Magic</option>
+                                            <option>Swift Casting</option>
+                                            <option>Ward Allies</option>
+                                            <option>Wizard's Grandeur</option>
+                                        </optgroup>
+                                        <optgroup
+                                            label="Arts of the Elementalist"
+                                        >
+                                            <option>Beckoned Deluge</option>
+                                            <option>Earthsight</option>
+                                            <option>Elemental Blast</option>
+                                            <option>Flamesight</option>
+                                            <option>Pavis of Elements</option>
+                                            <option>Petrifying Stare</option>
+                                            <option>Rune of Destruction</option>
+                                            <option>Steps of Air</option>
+                                            <option>Stunning Shock</option>
+                                            <option>Thermal Shield</option>
+                                        </optgroup>
+                                        <optgroup
+                                            label="Elementalist New Magic"
+                                        >
+                                            <option>Aqueous Harmony</option>
+                                            <option>Flame Scrying</option>
+                                            <option>Elemental Favor</option>
+                                            <option>Elemental Spy</option>
+                                        </optgroup>
+                                        <optgroup label="Arts of the Healers">
+                                            <option>Healing Touch</option>
+                                            <option>Empowered Healer</option>
+                                            <option>Facile Healer</option>
+                                            <option>Far Healer</option>
+                                            <option>Final Repose</option>
+                                            <option>Healer's Eye</option>
+                                            <option>Limb Restoration</option>
+                                            <option>Purge Ailment</option>
+                                            <option>Refined Restoration</option>
+                                            <option>Revive the Fallen</option>
+                                            <option>Swift Healer</option>
+                                            <option>The Healer's Knife</option>
+                                            <option>Tireless Vigor</option>
+                                            <option>Vital Furnace</option>
+                                        </optgroup>
+                                        <optgroup
+                                            label="Arts of the Necromancers"
+                                        >
+                                            <option>Bonetalker</option>
+                                            <option>Cold Flesh</option>
+                                            <option>Consume Life Energy</option>
+                                            <option>False Death</option>
+                                            <option>Gravesight</option>
+                                            <option>Keeper of the Gate</option>
+                                            <option>Life Bridge</option>
+                                            <option>Master of Bones</option>
+                                            <option>Red Harvest</option>
+                                            <option>Unaging</option>
+                                            <option>Uncanny Ichor</option>
+                                            <option>
+                                                Unliving Persistence
+                                            </option>
+                                        </optgroup>
+                                        <optgroup label="Necromancer New Magic">
+                                            <option>Command the Dead</option>
+                                            <option>Query the Skull</option>
+                                            <option>Smite the Dead</option>
+                                            <option>Terrible Liveliness</option>
+                                        </optgroup>
+                                        <optgroup label="Arts of the Vowed">
+                                            <option>Martial Style</option>
+                                            <option>Unarmed Might</option>
+                                            <option>Unarmored Defense</option>
+                                            <option>Brutal Counter</option>
+                                            <option>Faultless Awareness</option>
+                                            <option>Hurling Throw</option>
+                                            <option>The Inward Eye</option>
+                                            <option>Leap of the Heavens</option>
+                                            <option>Master's Vigor</option>
+                                            <option>Mob Justice</option>
+                                            <option>Nimble Ascent</option>
+                                            <option>Purified Body</option>
+                                            <option>Revivifying Breath</option>
+                                            <option>Shattering Strike</option>
+                                            <option>Style Weaponry</option>
+                                            <option>Unobtrusive Step</option>
+                                        </optgroup>
+                                    </select>
                                 </td>
                             </tr>
                         </table>
@@ -706,11 +852,52 @@
                         <table class="ui basic compact table form">
                             <tr>
                                 <td>
-                                    <input
-                                        name="HighMagic"
-                                        id="HighMagic1"
-                                        type="text"
-                                    />
+                                    <select
+                                        name="HighMagicFirstLevel"
+                                        id="HighMagicFirstLevel1"
+                                    >
+                                        <option></option>
+                                        <optgroup label="Level 1">
+                                            <option>
+                                                Apprehending the Arcane Form
+                                            </option>
+                                            <option>
+                                                Cognitive Supersession of the
+                                                Inferior Orders
+                                            </option>
+                                            <option>
+                                                The Coruscating Coffin
+                                            </option>
+                                            <option>
+                                                Damnation of the Sense
+                                            </option>
+                                            <option>
+                                                Decree of Ligneous Dissolution
+                                            </option>
+                                            <option>
+                                                The Excellent Tranpicuous
+                                                Transformation
+                                            </option>
+                                            <option>
+                                                Imperceptible Cerebral
+                                                Divulgence
+                                            </option>
+                                            <option>
+                                                Ineluctable Shackles of Volition
+                                            </option>
+                                            <option>
+                                                The Long Amber Moment
+                                            </option>
+                                            <option>Phantasmal Mimesis</option>
+                                            <option>
+                                                Velocitous Imbuement
+                                            </option>
+                                            <option>Wordpact Invocation</option>
+                                            <option>
+                                                The Wind of the Final Repose
+                                            </option>
+                                        </optgroup>
+                                    </select>
                                 </td>
                             </tr>
                         </table>
@@ -725,9 +912,67 @@
                         <div class="column">
                             <div class="ui container">
                                 <label>Armor</label>
+                                <select>
+                                    <option></option>
+                                    <optgroup label="Light Armors">
+                                        <option>No Armor</option>
+                                        <option>War Shirt</option>
+                                        <option>Buff Coat</option>
+                                        <option>Linothorax</option>
+                                        <option>War Robe</option>
+                                        <option>Pieced Armor</option>
+                                    </optgroup>
+                                    <optgroup label="Medium Armors">
+                                        <option>Mail Shirt</option>
+                                        <option>Cuirass and Greaves</option>
+                                        <option>Scaled Armor</option>
+                                    </optgroup>
+                                    <optgroup label="Heavy Armors">
+                                        <option>Mail Hauberk</option>
+                                        <option>Plate Armor</option>
+                                        <option>Great Armor</option>
+                                        <option>Grand Plate</option>
+                                    </optgroup>
+                                    <optgroup label="Shields">
+                                        <option>Small Shield</option>
+                                        <option>Large Shield</option>
+                                    </optgroup>
+                                </select>
                             </div>
                             <div class="ui container">
                                 <label>Weapons</label>
+                                <select>
+                                    <option></option>
+                                    <option>Axe, Hand</option>
+                                    <option>Axe, War</option>
+                                    <option>Blackjack</option>
+                                    <option>Bow, Large</option>
+                                    <option>Bow, Small</option>
+                                    <option>Claw Blades</option>
+                                    <option>Club</option>
+                                    <option>Club, Great</option>
+                                    <option>Crossbow</option>
+                                    <option>Dagger</option>
+                                    <option>Halberd</option>
+                                    <option>Hammer, Great</option>
+                                    <option>Hammer, War</option>
+                                    <option>Hurlant, Great</option>
+                                    <option>Hurlant, Hand</option>
+                                    <option>Hurlant, Long</option>
+                                    <option>Mace</option>
+                                    <option>Pike</option>
+                                    <option>Shield Bash, Large</option>
+                                    <option>Shield Bash, Small</option>
+                                    <option>Spear, Heavy</option>
+                                    <option>Spear, Light</option>
+                                    <option>Throwing Blade</option>
+                                    <option>Staff</option>
+                                    <option>Stiletto</option>
+                                    <option>Sword, Great</option>
+                                    <option>Sword, Long</option>
+                                    <option>Sword, Short</option>
+                                    <option>Unarmed Attack</option>
+                                </select>
                             </div>
                             <div class="ui container">
                                 <label>Wealth</label>
@@ -746,6 +991,52 @@
                             </div>
                             <div class="ui container">
                                 <label>Stored Items</label>
+                                <select>
+                                    <option></option>
+                                    <optgroup label="Bundles">
+                                        <option>Artisan's Equipment</option>
+                                        <option>Criminal Tools</option>
+                                        <option>Dungeoneering Kit</option>
+                                        <option>Noble Courtier Outfit</option>
+                                        <option>Performer's Implements</option>
+                                        <option>Wilderness Travel Gear</option>
+                                    </optgroup>
+                                    <optgroup label="Gear">
+                                        <option>Arrows, 20</option>
+                                        <option>Backpack</option>
+                                        <option>Boots</option>
+                                        <option>Candle</option>
+                                        <option>Cart, one-horse</option>
+                                        <option>Clothes, common</option>
+                                        <option>Clothes, fine</option>
+                                        <option>Clothes, noble</option>
+                                        <option>Cooking utensils</option>
+                                        <option>Crowbar</option>
+                                        <option>
+                                            Firewood, one night's fire
+                                        </option>
+                                        <option>Flask, metal, one pint</option>
+                                        <option>Grappling hook</option>
+                                        <option>Hammer or small tool</option>
+                                        <option>Healer's pouch</option>
+                                        <option>Hurlant bolts, 20</option>
+                                        <option>Iron spikes, 10</option>
+                                        <option>Lantern</option>
+                                        <option>Mirror, hand</option>
+                                        <option>Oil, one pint</option>
+                                        <option>Paper, 10 sheets</option>
+                                        <option>Rations, one week</option>
+                                        <option>Rope, 50'</option>
+                                        <option>Sack</option>
+                                        <option>
+                                            Shovel, pick, or similar tool
+                                        </option>
+                                        <option>Tinder box</option>
+                                        <option>Torch</option>
+                                        <option>Waterskin, one gallon</option>
+                                        <option>Writing kit</option>
+                                    </optgroup>
+                                </select>
                             </div>
                         </div>
                     </div>
